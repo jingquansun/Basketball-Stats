@@ -1,4 +1,3 @@
-
 import copy
 from constants import PLAYERS, TEAMS
 
@@ -90,6 +89,9 @@ def team_stats_format(team):
   avg_height(team)
   player_guardians(team)
   
+  continue_stats()
+
+def continue_stats():
   option = input("\n\n Would you like to continue? (Y/N):  ")
   while True:
     if option.lower() == "y":
